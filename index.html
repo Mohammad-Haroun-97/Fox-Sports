@@ -9,7 +9,7 @@
 
 
 
-    <title>Document</title>
+    <title>Fox Sports</title>
 </head>
 
 <body>
@@ -18,13 +18,16 @@
             <img src="./assests/logo_2.png" alt="" class="logo">
             <nav>
                 <ul>
-                    <li><a href="">Arabic</a></li>
-                    <li><a href="">Help</a></li>
+                    <button onclick="arabic()" id="Arabic">العربية</button>
+                    <button onclick="english()" id="English">English</button>
+
 
 
                 </ul>
             </nav>
             <img src="./assests/icons8-menu-24.png" alt="" class="menu-icon">
+
+            
 
 
 
@@ -42,26 +45,27 @@
 
 
 
-           
+
 
 
             <div class="animation-images">
+                <h2 id="breaking">Breaking News</h2>
 
                 <div class="mySlides fade">
 
-                    <img id="slidImages" src="./assests/logo_2.png" >
+                    <img id="slidImages" src="./assests/footballnews.jpg">
 
                 </div>
 
                 <div class="mySlides fade">
 
-                    <img id="slidImages" src="./assests/Logo_3.png" >
+                    <img id="slidImages" src="./assests/cricketnews.jpg">
 
                 </div>
 
                 <div class="mySlides fade">
 
-                    <img id="slidImages" src="./assests/123.jpg">
+                    <img id="slidImages" src="./assests/tennisnews.jpg">
 
                 </div>
 
@@ -69,67 +73,164 @@
             <br>
 
             <div style="text-align:center">
-                <div class="paragraph"> hello</div>
-                <div class="paragraph">hi</div>
-                <div class="paragraph">bye</div>
-                
+                <div class="paragraph">
+                    <p id="p1"> Getafe secure shock win over Real Madrid</p>
+                </div>
+                <div class="paragraph">
+                    <p id="p2"> Stokes backs Root and Silverwood</p>
+                </div>
+                <div class="paragraph">
+                    <p id="p3"> 30-LOVE: THE NEXT GREAT AMERICAN PLAYER
+                    </p>
+
+                </div>
+
+            </div>
+            <!-- <div class="signUpDiv">
+                <img id="signUpImg" src="assests/hero-1245-2112.jpg" alt="">
+
+            </div> -->
+            <div style="margin-top: 80PX;margin-bottom: 80PX;justify-content: center;text-align: center;" >
+                <h3 id="final" class="breaking"> Follow the latest news and have a remarkable experience and SIGN UP NOW </h3>
+
             </div>
 
 
 
+            <section class="signUp">
+
+
+
+                <form id="form" onsubmit="myfunc()">
+
+                    <div>
+                        <label id="Mobile Number" for="fname">Mobile Number</label>
+                    </div>
+                    <br />
+
+                    <div>
+
+                        <input type="text" id="Mobile Number" name="Mobile Number" placeholder="Mobile Number">
+
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+
+
+                    <div><label id="Verification Code" for="lname">Verification Code</label></div>
+                    <br />
+
+                    <div><input type="Verification Code" id="Verification Code" name="Verification Code"
+                            placeholder="Verification Code"></div>
+                    <br />
+                    <br />
+
+                    <div><button id="button" type="submit">SIGN UP </button></div>
 
 
 
 
+        </div>
+        </form>
+
+
+
+        </section>
+
+
+
+
+
+        <h2 id="videos">THE MOST POPULAR SPORT VIDEOS </h2>
+        <section>
+
+            
 
             <div class="row">
                 <div class="col1">
-                    <h2>Follow your favorite sport Now</h2>
-                    <img id="sports" src="./assests/123.jpg" alt="">
-
+                    <h4 style="text-align: center;font-size: 2.2vh;" id="catagoried1">Football</h4>
+                    <iframe id="sports" src="https://www.youtube.com/embed/ARrMcsX8FI0" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
-                <div>
-
-                   
-                
-
-
-
-
-
-
-                
-
-
-
-
-
-
-
-
-                <div class="footer">
-                    <img src="./assests/Logo_3.png" alt="" class="logo">
-                    <nav>
-                        <ul>
-                            <li><a href="">1</a></li>
-                            <li><a href="">2</a></li>
-
-
-                        </ul>
-                    </nav>
-                    <img src="./assests/icons8-menu-24.png" alt="" class="menu-icon">
-
+                <div class="col2">
+                    <h4 style="text-align: center;font-size: 2.2vh;" id="catagoried2">Tennis </h4>
+                    <iframe id="sports" src="https://www.youtube.com/embed/G6wCb6xkiQM" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
 
 
 
+
+        </section>
+
+        <section class="sextion2">
+
+
+            <div class="col1">
+                <h4 style="text-align: center;font-size: 2.2vh;" id="catagoried3">Cricket</h4>
+
+
+                <iframe id="sports" src="https://www.youtube.com/embed/ZqFvnDJhJ3U" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
 
             </div>
+            <div class="col2">
+                <h4 style="text-align: center;font-size: 2.2vh;" id="catagoried4">Swimming</h4>
+                <iframe id="sports" src="https://www.youtube.com/embed/ujPlg-gl3fo" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+
+
+        </section>
+
+
+        <div class="footer">
+
+            <img style="object-fit: cover;width: 50%;height: 100%;" src="./assests/Logo_3.png" alt="" class="logo">
+            
+            <nav class="footerNav">
+            <ul>
+                
+                <li> <p style="text-align: center;justify-content: center;font-family: cursive;font-size: 2vh;">Copyright © 2008 Apple Inc. </p></li>
+               
+            </ul>
+        </nav>
+
+           
+
+                
+            </div>
+            
+           
+            
+                    
+                   
+                    
+
+
+            
+            
 
         </div>
 
 
-        <script src="./JS/foxSports.js"></script>
+
+
+    </div>
+
+    </div>
+
+
+    <script src="./JS/foxSports.js"></script>
 </body>
 
 </html>

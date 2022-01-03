@@ -1,7 +1,10 @@
 *{
+    
     margin:0;
     padding:0;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    
+    /* background-color: #CCD1E4; */
 }
 
 
@@ -18,27 +21,38 @@
 
 .navbar{
     position: fixed;
-    background-color: cornflowerblue;
+    background-color: #A3E4DB;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    height: 72px;
+    height: 12vh;
     display: flex;
     align-items: center;
 
 }
-.footer{
-    position: fixed;
-    background-color: lightseagreen;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 72px;
-    display: flex;
-    align-items: center;
+#Arabic{
+    margin-right: 7px;
+    width: 30%;
+    height: 5vh;
+    font-size: 2vh;
+    background-color: #2F3A8F;
+    font-family: 'Mea Culpa', cursive;
+    color: #FEECE9;
+    border-radius: 10px;
 }
+#English{
+    margin-right: 17px;
+    width: 30%;
+    height: 5vh;
+    font-size: 1.8vh;
+    background-color: #2F3A8F;
+    font-family: 'Mea Culpa', cursive;
+    font-weight: 500;
+    color: #FEECE9;
+    border-radius: 10px;
+}
+
 
 .logo{
     width:30%;
@@ -51,7 +65,8 @@
 
 }
 .menu-icon{
-    width:7%;
+    width:4%;
+    height: 40%;
     margin-right: 4%;
     cursor: pointer;
 }
@@ -71,33 +86,95 @@ nav ul li a{
    text-decoration: none;
    font-size: 14px;
    color: #000;
+   font-family: 'Mea Culpa', cursive;
 }
 
 .row{
+    display: flex;
     margin-top: 100px;
+    width: 100%;
+    height: 30vh;
+    
+    justify-content: center;
+     margin-bottom: 50px;
+    
    
 
 }
+#videos {
+    width: 100%;
+    text-align: center;
+    margin-top: 125px;
+    font-family: "Imperial Script",cursive;
+    font-weight: 600;
+    text-shadow: #1a1a1a 1px 1px;
+    background-image: url(https://acegif.com/wp-content/gif/confetti-4.gif); 
+    background-size: cover;
+     border-radius: 15px;
+     padding-top: 2px;
+     margin-bottom: 10px;
+     font-size: 3vh;
+}
+
+.col-1 {
+    display: inline-block;
+   width: 100%;
+   height: 30vh;
+   padding-right: 0px;
+  
+   justify-content: center;
+  
+}
+.col-2 {
+    display: inline-block;
+    width: 100%;
+    height: 30vh;
+    margin-left: 0px;
+    justify-content: center;
+ }
+ .col-2 {
+align-content: center;
+ }
+
+
 
 #sports{
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
-    /* position: relative; */
-    width: 100%;
-    border-radius: 30px;
+    justify-content: inherit;
+    align-content: center;
     
-    /* margin-left: 50px; */
+    
+    width: 80%;
+    height: 90%;
+    border-radius: 5px;
+    
+  
 }
 
-.col-1 h2{
-    font-size: 40px;
-    margin: 20px 0 10px;
+.sextion2{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    height: 30vh;
+    
+    justify-content: center;
+     margin-bottom: 20vh;
 }
 
 
 
-
+#breaking{
+    font-family: "Imperial Script",cursive;
+   font-weight: 600;
+    text-shadow: #1a1a1a 1px 1px; 
+    background-image: url(https://acegif.com/wp-content/gif/confetti-4.gif); 
+     background-size: cover;
+    border-radius: 15px;
+    padding-top: 9vh;
+    margin-bottom: 10px;
+}
 
 
 
@@ -106,6 +183,12 @@ nav ul li a{
  
   margin-top: 100px;
 }
+.animation-images h2{
+ text-align: center;
+ padding-bottom: 25px;
+ font-size: 4vh;
+    /* justify-content: center; */
+}
 
 .slideshow-container .mySlides-fade img{
 
@@ -113,25 +196,18 @@ nav ul li a{
     height: 500px;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  /* position: absolute; */
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
+
+
 
 #slidImages{
     display: block;
     width:80%;
     
-    height:25vh;
+    height:50vh;
+    object-fit: cover;
 
-    border: black;
-    border: solid;
+    /* border: black; */
+    /* border: solid; */
     border-radius: 30px;
     margin-left: auto;
   margin-right: auto;
@@ -144,20 +220,32 @@ nav ul li a{
 
 
 
-/* The dots/bullets/indicators */
 .paragraph {
     display: block;
     width:80%;
-    font-size: 3vh;
+   
     
     height:7vh;
 
-    border: black;
-    border: solid;
     border-radius: 30px;
     margin-left: auto;
   margin-right: auto;
 
+
+}
+
+.paragraph p{
+    display: inline-block;
+    font-size: 2.5vh;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    vertical-align:middle;
+    font-family: "Imperial Script",cursive;
+    font-weight: 400;
+     text-shadow: #2c1150 1px 1px; 
+   
 }
 
 .active {
@@ -172,17 +260,134 @@ nav ul li a{
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Get rid of all default margins/paddings. Set typeface */
+.signUp{
+    /* background-color: red; */
+}
+#signupTitle{
+
+    margin-top: 80px;
+    margin-bottom: 50px;
+    height: 16vh;
+  
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    
+
+    border-radius: 30px;
+    background-color: #2F3A8F;
+}
+#signupTitle p{
+    font-size: 3vh;
+    display: block; 
+     top: 3vh;
+     position: absolute;
+     font-family: "Imperial Script",cursive;
+     font-weight: 400;
+      text-shadow: #2c1150 1px 1px;  
+  
+   
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+
+}
+#form label{
+    /* width: 100%; */
+    font-size: 3vh;
+    float: left;
+    font-family: "Imperial Script",cursive;
+    font-weight: 400;
+     text-shadow: #2c1150 1px 1px; 
+  
+}
+#final{
+    font-family: "Imperial Script",cursive;
+    font-size: 3vh;
+    font-weight: 600;
+     text-shadow: #706c75 1px 2px; 
+     background-image: url(https://acegif.com/wp-content/gif/confetti-4.gif); 
+     background-size: cover;
+     /* background-repeat: no-repeat; */
+     border-radius: 15px;
+     padding-top: 8px;
+     margin-bottom: 10px;
+}
+
+#form input{
+    width: 100%;
+    font-size: 4vh;
+    border-radius: 15px;
+    height: 7vh;
+    font-family: "Imperial Script",cursive;
+    font-weight: 400;
+     text-shadow: #2c1150 1px 1px; 
+}
+
+#form input::placeholder{
+    opacity: .3;
+}
+
+#button{
+    width: 100%;
+    font-size: 4vh;
+    border-radius: 15px;
+    height: 7vh;
+    background-color: #2F3A8F;
+    font-family: "Imperial Script",cursive;
+    font-weight: 400;
+     text-shadow: #2c1150 1px 1px; 
+     color: #FEECE9;
+}
+
+
+.signUpDiv{
+    position: relative;
+
+}
+
+
+
+#signUpImg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.footerImg{
+   
+    height: 40%;
+    width: 20%;
+
+    object-fit: cover;
+    /* position: fixed; */
+   
+}
+
+
+
+.footer{
+    position: fixed;
+    background-color: #A3E4DB;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    
+   
+}
+
